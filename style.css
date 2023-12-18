@@ -1,0 +1,131 @@
+.meta {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+
+
+.menu{
+    /* рамка */
+    border-style:solid;
+    border-color: rgb(218, 218, 218);
+    border-width: 1px;
+    /* основные настройки */
+    width:350px;
+    height: 320px;
+}
+.menu2{
+    margin-top: 10px;
+    /* рамка */
+    border-style:solid;
+    border-color: rgb(218, 218, 218);
+    border-width: 1px;
+    /* основные настройки */
+    width:350px;
+    height: 70px;
+    font-family:Arial, Helvetica, sans-serif ;
+    color: rgb(94, 94, 94);
+
+}
+.menu3{
+    /* основные настройки */
+    width:350px;
+    font-family:monospace ;
+    color: rgb(65, 65, 65);
+    font-size: 14px;
+    font-weight: 300;
+}
+.imglogo{
+    width: 250px;
+    padding-top: 25px;
+}
+.form{
+    padding-top: 10px;
+}
+input{
+    margin-top: 10px;
+    width: 250px;
+    height: 35px;
+    background-color: rgb(252, 252, 252);
+    /* рамка */
+    border-style:solid;
+    border-color: rgb(218, 218, 218);
+    border-width: 1px;
+    border-radius: 4px;
+}
+input::placeholder{
+    font-size: 12px;
+    padding-left: 5px;
+}
+.btnsub{
+    margin-top: 10px;
+    color: aliceblue;
+    font-weight: 600;
+    background-color: rgb(77, 169, 255);
+    width: 256px;
+    height: 35px;
+        /* рамка */
+        border: none;
+        border-radius: 10px;
+}
+
+a {
+
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 13px;
+    color: rgb(108, 101, 136); /* Измените цвет на желаемый */
+    text-decoration: none; /* Удалите подчеркивание */
+  }
+  
+.eye{
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: none;
+}
+.eye:hover{
+    opacity: 0.7;
+}
+.imglol{
+    width: 150px;
+    height: 50px;
+}
+/* footer navmenu */
+.navbar {
+    background-color: transparent;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-left: 5%;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+}
+
+  /* Стиль ссылок внутри панели навигации */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #a2a2a2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  /* Изменить цвет ссылок при наведении */
+  .navbar a:hover {
+    color: black;
+  }
+
+.center{
+
+    margin-left: 45%;
+
+}
+
+  

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>bruh</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+<body align="center">
+    <div class="meta">
+        <div class="menu">
+            <img src="img_inst_logo.png" class="imglogo">
+            <!-- форма -->
+            <div class="form">
+                <form>
+                    <input type="text" placeholder="Телефон, имя пользователя или эл.адрес" required>
+                    <input type="password" placeholder="Пароль" id="pwd" class="masked" name="password" style="margin-left: 19px;" required>                    <button type="button" onclick="showHide()" id="eye" class="eye"><img src="eye.png" class="eye" id="imgeye"/></button>
+
+                    <button type="submit" class="btnsub">Войти</button>
+                </form>
+            </div>
+            <a href="https://www.instagram.com/accounts/password/reset/"><h5>Забыли пароль?</h5></a>
+        </div>
+        <!-- <label><input type="checkbox" class="password-checkbox"> Показать пароль</label> -->
+        <div class="menu2">
+            <h5>У вас ещё нет аккаунта?<a href="#" style="color: rgb(77, 169, 255);"> Зарегистрироваться</a></h5>
+        </div>
+        <div class="menu3">
+            <h4>Установите приложение.</h4>
+            <img  class="imglol" src="inst_gp.png"/>
+            <img  class="imglol" src="inst_ms.png"/>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="navbar">
+            <a href="#">Meta</a>
+            <a href="#">Информация</a>
+            <a href="#">Блог</a>
+            <a href="#">Вакансии</a>
+            <a href="#">Помощь</a>
+            <a href="#">API</a>
+            <a href="#">Конфиденциальность</a>
+            <a href="#">Условия</a>
+            <a href="#">Места</a>
+            <a href="#">Instagram Lite</a>
+            <a href="#">Threads</a>
+            <a href="#">Загрузка контактов и лица, не являющиеся пользователями</a>
+            <a href="#">Meta Verified</a><br>
+            <a href="#" class="center" style="margin-left: 39%;">Русский</a>
+            <a href="#" class="center" style="margin-top: -40px;">© 2023 Instagram from Meta</a>
+
+        </div>
+    </footer>
+    <script>
+        var p = document.getElementById('pwd');
+
+        function togglePasswordVisibility() {
+        if (p.getAttribute('type') === 'password') {
+        p.setAttribute('type', 'text');
+        } else {
+        p.setAttribute('type', 'password');
+        }
+        }
+
+        document.getElementById("eye").onclick = function() {
+        togglePasswordVisibility();
+        }
+    </script>
+    <script src="script.js" type="text/babel"></script>
+</body>
+</html>
+<!-- <div class="container">
+    <h2>Регистрация в Instagram</h2>
+    <form>
+        <input type="text" placeholder="Имя пользователя" required>
+        <input type="email" placeholder="Электронная почта" required>
+        <input type="password" placeholder="Пароль" required>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</div> -->
